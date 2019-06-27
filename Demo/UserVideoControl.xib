@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserVideoControl">
+            <connections>
+                <outlet property="btnCloseVideo" destination="3aS-Sb-5ql" id="FCI-Oh-Reo"/>
+                <outlet property="btnSwitchCamera" destination="n1D-xK-Yir" id="SQl-Zc-RwO"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="8lV-yc-H6Y"/>
+                <outlet property="imageView" destination="tYg-gS-K59" id="N6p-Ts-EwO"/>
+                <outlet property="lblMixGuestVideo" destination="b4k-Ee-dMf" id="xet-T6-lSE"/>
+                <outlet property="lblSessionID" destination="IOg-uL-5sD" id="BCa-e2-XIO"/>
+                <outlet property="lblUserDevice" destination="bWw-ih-OpS" id="gNr-26-ZQL"/>
+                <outlet property="switchMixGuestVideo" destination="vlm-fq-j4f" id="NGc-cE-DCt"/>
+                <outlet property="viewBorderBottom" destination="egR-Bh-qBI" id="Pxi-kC-n65"/>
+                <outlet property="viewBorderLeft" destination="bCI-Zc-IEv" id="AVc-Ud-GWG"/>
+                <outlet property="viewBorderRight" destination="d7G-6R-NXO" id="66s-pQ-K1r"/>
+                <outlet property="viewBorderTop" destination="043-oU-lOX" id="80P-W4-sUe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="268" height="368"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tYg-gS-K59">
+                    <rect key="frame" x="0.0" y="0.0" width="268" height="368"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="5bt-rO-4GL" appends="YES" id="DjD-mu-iWi"/>
+                        <outletCollection property="gestureRecognizers" destination="9cg-Nw-r2K" appends="YES" id="ncR-yk-y3x"/>
+                    </connections>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[SessionID]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOg-uL-5sD">
+                    <rect key="frame" x="95" y="11" width="79" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserDevice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWw-ih-OpS">
+                    <rect key="frame" x="94" y="36" width="80" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aS-Sb-5ql">
+                    <rect key="frame" x="220" y="4" width="48" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="ckN-fv-HNh"/>
+                        <constraint firstAttribute="width" constant="48" id="hwO-yv-WD2"/>
+                    </constraints>
+                    <state key="normal" image="CloseVideo"/>
+                    <connections>
+                        <action selector="btnCloseVideoClicked:" destination="-1" eventType="touchUpInside" id="VNr-3S-z7V"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1D-xK-Yir">
+                    <rect key="frame" x="8" y="4" width="64" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="5eZ-Rc-ag3"/>
+                        <constraint firstAttribute="width" constant="64" id="69D-pw-PMD"/>
+                    </constraints>
+                    <state key="normal" image="SwitchCamera"/>
+                    <connections>
+                        <action selector="switchCamera:" destination="-1" eventType="touchUpInside" id="6g3-c3-1rw"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否推流" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4k-Ee-dMf">
+                    <rect key="frame" x="103.5" y="306" width="61.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vlm-fq-j4f">
+                    <rect key="frame" x="110" y="328" width="51" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="fWt-bJ-tMN"/>
+                        <constraint firstAttribute="width" constant="49" id="yGt-VR-VwF"/>
+                    </constraints>
+                    <connections>
+                        <action selector="switchMixGuestVideoValueChanged:" destination="-1" eventType="valueChanged" id="nHm-Pl-weI"/>
+                    </connections>
+                </switch>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="043-oU-lOX">
+                    <rect key="frame" x="0.0" y="0.0" width="268" height="2"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="UCp-OP-Nd6"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egR-Bh-qBI">
+                    <rect key="frame" x="0.0" y="366" width="268" height="2"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="bjG-j4-veR"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCI-Zc-IEv">
+                    <rect key="frame" x="0.0" y="2" width="2" height="364"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="CKo-Fh-NJP"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7G-6R-NXO">
+                    <rect key="frame" x="266" y="2" width="2" height="364"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="sPp-Ki-Hkq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="egR-Bh-qBI" secondAttribute="trailing" id="0jx-MJ-aTK"/>
+                <constraint firstItem="tYg-gS-K59" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2Rn-ZJ-z1n"/>
+                <constraint firstItem="d7G-6R-NXO" firstAttribute="top" secondItem="043-oU-lOX" secondAttribute="bottom" id="3o0-zK-Jbo"/>
+                <constraint firstItem="043-oU-lOX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4zp-71-W75"/>
+                <constraint firstItem="egR-Bh-qBI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6px-H8-WKg"/>
+                <constraint firstItem="n1D-xK-Yir" firstAttribute="top" secondItem="3aS-Sb-5ql" secondAttribute="top" id="9bA-Rg-HvR"/>
+                <constraint firstItem="bCI-Zc-IEv" firstAttribute="top" secondItem="043-oU-lOX" secondAttribute="bottom" id="B1f-RX-h7o"/>
+                <constraint firstItem="IOg-uL-5sD" firstAttribute="centerY" secondItem="3aS-Sb-5ql" secondAttribute="centerY" id="EVf-TA-a9n"/>
+                <constraint firstItem="tYg-gS-K59" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GdC-a4-LyW"/>
+                <constraint firstAttribute="trailing" secondItem="3aS-Sb-5ql" secondAttribute="trailing" id="Ler-4g-bhd"/>
+                <constraint firstItem="vlm-fq-j4f" firstAttribute="top" secondItem="b4k-Ee-dMf" secondAttribute="bottom" constant="4" id="MkK-8q-y7b"/>
+                <constraint firstItem="egR-Bh-qBI" firstAttribute="top" secondItem="d7G-6R-NXO" secondAttribute="bottom" id="TFK-Rj-Dgl"/>
+                <constraint firstItem="043-oU-lOX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tpe-8K-ZIt"/>
+                <constraint firstItem="egR-Bh-qBI" firstAttribute="top" secondItem="bCI-Zc-IEv" secondAttribute="bottom" id="Vqu-5q-wDG"/>
+                <constraint firstItem="bCI-Zc-IEv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Wb7-NZ-XfF"/>
+                <constraint firstAttribute="bottom" secondItem="egR-Bh-qBI" secondAttribute="bottom" id="Xh3-AE-YUj"/>
+                <constraint firstItem="3aS-Sb-5ql" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="Z9Z-JZ-bI1"/>
+                <constraint firstAttribute="trailing" secondItem="d7G-6R-NXO" secondAttribute="trailing" id="eUO-Qk-C9Q"/>
+                <constraint firstAttribute="bottom" secondItem="tYg-gS-K59" secondAttribute="bottom" id="etr-4U-tLJ"/>
+                <constraint firstItem="bWw-ih-OpS" firstAttribute="top" secondItem="n1D-xK-Yir" secondAttribute="bottom" id="f3I-MI-Te5"/>
+                <constraint firstAttribute="trailing" secondItem="043-oU-lOX" secondAttribute="trailing" id="fXk-C5-Jxf"/>
+                <constraint firstItem="IOg-uL-5sD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jdq-N0-Erz"/>
+                <constraint firstAttribute="bottom" secondItem="b4k-Ee-dMf" secondAttribute="bottom" constant="44" id="jrp-oe-HOH"/>
+                <constraint firstItem="b4k-Ee-dMf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kP9-4A-kSk"/>
+                <constraint firstItem="n1D-xK-Yir" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="qbI-Ok-39e"/>
+                <constraint firstItem="vlm-fq-j4f" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qtD-IF-3m3"/>
+                <constraint firstAttribute="trailing" secondItem="tYg-gS-K59" secondAttribute="trailing" id="wbz-qS-mtt"/>
+                <constraint firstItem="bWw-ih-OpS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zDc-MC-0Cm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-248" y="-369"/>
+        </view>
+        <tapGestureRecognizer id="5bt-rO-4GL">
+            <connections>
+                <action selector="tapImageView:" destination="-1" id="jsJ-K0-4bb"/>
+            </connections>
+        </tapGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="9cg-Nw-r2K">
+            <connections>
+                <action selector="panImageView:" destination="-1" id="9cJ-sO-PsG"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="CloseVideo" width="32" height="32"/>
+        <image name="SwitchCamera" width="73" height="37"/>
+    </resources>
+</document>

@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "d451f5a5-d085-49d4-a01e-1bc11d22f1e7++505",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "d451f5a5-d085-49d4-a01e-1bc11d22f1e7++505" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "d451f5a5-d085-49d4-a01e-1bc11d22f1e7++505" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "019C0DCE-2BC4-4D01-81BC-642CBCC8AF96",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "d451f5a5-d085-49d4-a01e-1bc11d22f1e7++505" : "trunk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "jni\/platform\/Api\/BCAPI_iOS_DEMO\/momo_client\/Demo\/Demo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/114.55.29.216\/WSAPI",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "d451f5a5-d085-49d4-a01e-1bc11d22f1e7++505"
+    }
+  ]
+}

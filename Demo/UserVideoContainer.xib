@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12120"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserVideoContainer">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="y5R-mc-PBg"/>
+                <outlet property="userVideoControl" destination="dhH-QX-ZxA" id="OYP-CU-NeE"/>
+                <outlet property="viewBorderBottom" destination="aL9-bY-82a" id="Wdc-kZ-SY7"/>
+                <outlet property="viewBorderLeft" destination="yDn-I9-rGC" id="h99-J9-IYj"/>
+                <outlet property="viewBorderRight" destination="hjH-7d-OF1" id="jfM-Ju-pHO"/>
+                <outlet property="viewBorderTop" destination="jCX-vM-Xxr" id="tro-qe-XZP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="361"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jCX-vM-Xxr">
+                    <rect key="frame" x="0.0" y="0.0" width="278" height="2"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="oPD-EI-WDk"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aL9-bY-82a">
+                    <rect key="frame" x="0.0" y="359" width="278" height="2"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="oe1-TB-Muv"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDn-I9-rGC">
+                    <rect key="frame" x="0.0" y="2" width="2" height="357"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="kEx-Wl-CN0"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hjH-7d-OF1">
+                    <rect key="frame" x="276" y="2" width="2" height="357"/>
+                    <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="2" id="x9e-oz-lr5"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhH-QX-ZxA" customClass="UserVideoControl">
+                    <rect key="frame" x="19" y="39" width="240" height="293"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aL9-bY-82a" secondAttribute="bottom" id="5UR-X1-Tbx"/>
+                <constraint firstItem="aL9-bY-82a" firstAttribute="top" secondItem="hjH-7d-OF1" secondAttribute="bottom" id="5Ye-jW-WnG"/>
+                <constraint firstAttribute="trailing" secondItem="hjH-7d-OF1" secondAttribute="trailing" id="79W-N3-YyI"/>
+                <constraint firstItem="aL9-bY-82a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KSg-WV-MlH"/>
+                <constraint firstItem="jCX-vM-Xxr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MtG-nt-7nr"/>
+                <constraint firstItem="yDn-I9-rGC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PZ7-d6-MDU"/>
+                <constraint firstAttribute="trailing" secondItem="jCX-vM-Xxr" secondAttribute="trailing" id="PpN-8C-L6L"/>
+                <constraint firstItem="jCX-vM-Xxr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UNE-SG-WSn"/>
+                <constraint firstItem="hjH-7d-OF1" firstAttribute="top" secondItem="jCX-vM-Xxr" secondAttribute="bottom" id="Ut3-ER-gIW"/>
+                <constraint firstAttribute="trailing" secondItem="aL9-bY-82a" secondAttribute="trailing" id="buF-Aj-YKV"/>
+                <constraint firstItem="aL9-bY-82a" firstAttribute="top" secondItem="yDn-I9-rGC" secondAttribute="bottom" id="h1H-cJ-41R"/>
+                <constraint firstItem="yDn-I9-rGC" firstAttribute="top" secondItem="jCX-vM-Xxr" secondAttribute="bottom" id="qLT-cv-cTt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-23" y="-101.5"/>
+        </view>
+    </objects>
+</document>
